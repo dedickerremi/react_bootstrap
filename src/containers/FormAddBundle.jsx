@@ -19,13 +19,13 @@ const getBundleRules = () => {
   ];
 };
 
-const validateNameField = (value) => {
+export const validateNameField = (value) => {
   if(value.match(/(^(?=(.*[a-z0-9]){2,})([a-z0-9\\_\-\s]{4,})$)/ui))
     return true;
   return false;
 };
 
-const validateBundleField = (value) => {
+export const validateBundleField = (value) => {
   if (value.match(/(^([a-z]{1}[a-z\d_]*\.)+[a-z][a-z\d_]*$)/i))
     return true;
   return false;
